@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日月竹墨神机</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">日月竹墨神机</a></li>
+            <li><a href="index.html">日记</a></li>
+            <li><a href="http://127.0.0.1/">画廊</a></li>
+            <li><a href="敬请期待.html">个人信息</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="create-section">
+            <h2>创建分区</h2>
+            <form id="create-section-form" action="create_section.php" method="POST" enctype="multipart/form-data">
+                <label for="cover">分区封面:</label>
+                <input type="file" id="cover" name="cover" accept="image/*" required>
+                <label for="title">分区标题:</label>
+                <input type="text" id="title" name="title" required>
+                <button type="submit">创建</button>
+            </form>
+        </div>
+        <div class="sections" id="sections"></div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
